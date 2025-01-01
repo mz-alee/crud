@@ -4,7 +4,7 @@ import { Getpost } from "./Api";
 import Post from "./Post";
 
 const page = () => {
-  const [isDark, setisDark] = useState(false);
+  const [isDark, setisDark] = useState(true);
   const handleDark = () => {
     setisDark(!isDark);
     if (!isDark) {

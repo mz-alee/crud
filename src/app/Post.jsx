@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Getpost, Delpost, Addpost } from "./Api";
 import "./api.css"; // Importing the CSS file
 import Form from "./Form";
-import CookieExample from "../../Cookies";
-import Togglebtn from "./Togglebtn";
 
 const Post = () => {
   const [data, setdata] = useState([]);
@@ -34,7 +32,6 @@ const Post = () => {
 
   return (
     <div className="post-container">
-      <Togglebtn />
       <Form onaddpost={setdata} />
       {data.map((items) => (
         <div className="post-item" key={items.id}>
